@@ -28,10 +28,10 @@ const MovieDetails = () => {
               alt="null"
             />
             <div className="justify-content-center text-center  mx-auto">
-              <p className="card-text-details border-bottom">
+              <p className="card-text-details border-bottom  mx-auto">
                 اسم الفيلم: {movie.title}
               </p>
-              <p className="card-text-details border-bottom">
+              <p className="card-text-details border-bottom ">
                 تاريخ الفيلم :{movie.release_date}
               </p>
               <p className="card-text-details border-bottom">
@@ -80,7 +80,14 @@ const MovieDetails = () => {
               عوده للرئيسيه
             </button>
           </Link>
-          <a href={movie.homepage}>
+
+          <a
+            href={
+              movie.homepage
+                ? movie.homepage
+                : `https://www.youtube.com/results?search_query=${movie.original_title}+watched+trailer`
+            }
+          >
             <button
               style={{
                 backgroundColor: "rgba(82, 109, 137, 0.51)",

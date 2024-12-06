@@ -1,31 +1,31 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   direction: rtl;
+  background-color: #131722 !important;
 }
 
-.color-body {
-  background-color: #131722;
-  /* height: 100vh; */
-}
 .nav-style {
   height: 90px;
-  width: 1440px;
+  width: 150px;
   background-color: #313b47;
 }
 
 .logo {
-  height: 72px;
-  width: 78px;
+  height: 65px;
+  width: 60px;
 }
 
 .search {
   position: relative;
-  /* margin-left: 100px; */
+  width: 1% !important;
+  /* text-align: center !important; */
+  margin-right: 15% !important;
 }
 
 .search input {
@@ -99,23 +99,25 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
-.color {
+/* .color {
   color: #b45b35;
   background-color: #b45b35;
-}
+} */
 
 .card-detalis {
   height: 370px;
+  width: 100%;
   border-radius: 20px;
   background-color: #f8f8f8;
 }
 .card-story {
-  height: 300px;
+  /* height: 300px; */
   border-radius: 20px;
   background-color: #f8f8f8;
 }
 .img-movie {
-  height: 360px;
+  height: 60%;
+  /* width: 50% !important; */
   padding: 10px;
   border-radius: 20px;
 }
@@ -123,27 +125,34 @@ body {
 .card-text-details {
   color: #555555;
   font-family: Almarai;
-  font-size: 28px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 49px;
+  line-height: 29px;
 }
 
 .card-text-story {
   color: #555555;
   font-family: Almarai;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 0;
-  line-height: 32px;
+  line-height: 52px;
 }
 .card-text-title {
   color: #555555;
   font-family: Almarai;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 49px;
+  line-height: 5px;
 }
 .btn:hover {
   background-color: #ae2c1d !important;
 }
+/* .pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 20px !important;
+  width: 1% !important;
+} */
